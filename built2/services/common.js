@@ -1,0 +1,1 @@
+define(["ionic"],function(){return angular.module("commonServices",[]).factory("commonServices",["$http",function($http){var commonservices={};return commonservices.getHost=function(){return $http.get("https://raw.githubusercontent.com/racaljk/hosts/master/hosts").success(function(res){console.log(res)}),"function()"},commonservices}])});

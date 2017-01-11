@@ -1,0 +1,1 @@
+define(["ionic"],function(){angular.module("test.directive",[]).directive("testEle",["$compile",function($compile){return{restrict:"E",template:"",link:function(scope,element,attrs,ngModel){var templateDirective="<app-ele></app-ele>",newScope=scope.$new(),el=$compile(templateDirective)(newScope);element.append(el)}}}])});
